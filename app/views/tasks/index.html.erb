@@ -1,0 +1,8 @@
+<h1>Todas as tasks</h1>
+
+
+<% @tasks.each do |task| %>
+<p>description: <%= link_to task.description, task_path(task) %> </p>
+<p>done: <%= task.done %> </p>
+
+<% end %>
